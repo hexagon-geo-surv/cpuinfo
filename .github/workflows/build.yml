@@ -1,10 +1,6 @@
 name: Build using CMake
 on:
-  pull_request:
   push:
-    branches:
-      - master
-      - main
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
